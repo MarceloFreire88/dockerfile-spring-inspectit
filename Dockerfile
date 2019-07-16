@@ -19,7 +19,7 @@ ADD target/YorApplicationHere.war /
 
 ENV TZ BRT
 #RUN bash -c 'touch /app.jar'
-ENTRYPOINT ["java","-jar","-javaagent:/agent/inspectit-agent.jar","-Dinspectit.repositoryourRepoHere:9070","-Dinspectit.agent.name=CP-BACKEND","/YorApplicationHere.war"]
+ENTRYPOINT ["java","-jar","-javaagent:/agent/inspectit-agent.jar","-Dinspectit.repository=yourRepoHere:9070","-Dinspectit.agent.name=CP-BACKEND","/YorApplicationHere.war"]
 ~                                                                                                                                                                         
 ~                                                                                                                                                                         
 ~                                         
